@@ -28,6 +28,12 @@ body {
   padding-inline: 1.5rem;
 }
 
+.title {
+  margin-bottom: 2rem;
+  font-weight: 800;
+  font-size: 1.25rem;
+}
+
 .advice {
   background-color: hsl(217, 19%, 24%);
   padding: 1.5rem;
