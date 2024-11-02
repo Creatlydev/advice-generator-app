@@ -61,7 +61,7 @@ body {
 }
 
 .btn-generator.busy {
-  pointer-events: none;
+  cursor: not-allowed;
   > svg {
     animation: loading .5s infinite;
   }
@@ -104,4 +104,13 @@ typing-effect {
 .attribution {
   margin-top: 3rem;
   font-size: .875rem;
+
+  > a {
+    text-decoration-style: wavy;
+    font-weight: 500;
+
+    &:hover {
+      color: hsl(150, 100%, 66%);
+    }
+  }
 }

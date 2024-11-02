@@ -27,7 +27,7 @@ class TypingEffectElement extends HTMLElement {
     await loaded;
     if (this.content) await typeLines(this.lines, this.content, this.characterDelay, this.lineDelay);
     if (this.cursor) this.cursor.hidden = true;
-    this.dispatchEvent(
+    this.lines.length && this.dispatchEvent(
       new CustomEvent('typing:complete', {
         bubbles: true,
         cancelable: true
